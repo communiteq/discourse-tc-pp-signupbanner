@@ -1,0 +1,9 @@
+signup_text:
+  default: Sign up blah blah blah blah
+signup_button_text:
+  default: Log In / Join
+show_to_logged_in:
+  default: false
+  type: bool
+signup_button_destination:
+  default: https://peakprosperity.com/wp-login.php

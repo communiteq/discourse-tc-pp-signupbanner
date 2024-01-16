@@ -1,0 +1,11 @@
+{{#if mustShow}}
+<div class="alert alert-warning alert-signup-banner">
+    {{theme-setting "signup_text"}}
+    <DButton
+        @action={{action "clickSignupButton"}}
+        @class="btn-primary"
+        @icon="user">
+        {{theme-setting "signup_button_text"}}
+    </DButton>
+</div>
+{{/if}}

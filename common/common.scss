@@ -1,0 +1,14 @@
+.alert-signup-banner {
+    border-color: #cdbb7a;
+    background-color: #eedba7;
+    color: #b99518;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1em;
+    button {
+        min-width: 140px;
+        margin-left: auto; /* push button to the right */
+        background-color: #7b6310;
+    }
+}
