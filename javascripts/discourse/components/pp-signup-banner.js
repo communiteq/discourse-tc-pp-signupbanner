@@ -5,6 +5,7 @@ import { tracked } from "@glimmer/tracking";
 import { defaultHomepage } from "discourse/lib/utilities";
 import I18n from "I18n";
 import Category from "discourse/models/category";
+import getURL from "discourse-common/lib/get-url";
 
 const FEATURED_CLASS = "pp-signup-banner";
 
@@ -21,6 +22,7 @@ export default class PpSignupBanner extends Component {
     }
 
     @action clickSignupButton() {
-        window.location.href = settings.signup_button_destination;
+        const returnPath = encodeURIComponent(window.location.pathname);
+        window.location = getURL("/session/sso?return_path=" + returnPath);
     }
 }
